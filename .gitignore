@@ -5,7 +5,7 @@ node_modules/
 dist/
 
 # Release packages
-releases/
+# releases/
 
 # Environment files
 .env
