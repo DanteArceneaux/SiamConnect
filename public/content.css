@@ -1,0 +1,13 @@
+/* SiamConnect Content Script Styles */
+
+#siamconnect-tooltip {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Prevent tooltip from inheriting page styles */
+#siamconnect-tooltip * {
+  all: revert;
+  font-family: inherit;
+}
+
+

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#312e81"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Thai letter ส (Sor Sala) stylized -->
+  <text x="64" y="92" 
+        font-family="Noto Sans Thai, sans-serif" 
+        font-size="72" 
+        font-weight="bold"
+        fill="url(#gold)" 
+        text-anchor="middle">ส</text>
+  <!-- Connection dots representing network -->
+  <circle cx="24" cy="24" r="4" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="104" cy="24" r="4" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="104" cy="104" r="4" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="24" cy="104" r="4" fill="#fbbf24" opacity="0.6"/>
+</svg>
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "siamconnect",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The ultimate Chrome extension for Thai expats in the USA",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && npm run copy-extension-files",
+    "copy-extension-files": "node scripts/copy-extension.js",
+    "package": "npm run build && node scripts/package-for-store.cjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "archiver": "^7.0.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.555.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

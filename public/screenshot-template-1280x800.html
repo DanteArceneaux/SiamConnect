@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SiamConnect Screenshot Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 1280px;
+            height: 800px;
+            overflow: hidden;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .container {
+            width: 1280px;
+            height: 800px;
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #2d1b4e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Decorative elements */
+        .circle1 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+            top: -100px;
+            left: -100px;
+        }
+        .circle2 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+            bottom: -150px;
+            right: -100px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            z-index: 1;
+        }
+        .text-side {
+            max-width: 500px;
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            color: #1a1a2e;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        h1 span {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .description {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .feature-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 18px;
+            border-radius: 25px;
+            color: white;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .app-preview {
+            width: 380px;
+            height: 580px;
+            background: #0d0d1a;
+            border-radius: 20px;
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5),
+                        0 30px 60px -30px rgba(0, 0, 0, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .app-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .app-preview::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+        /* Placeholder for where screenshot will go */
+        .screenshot-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="content">
+            <div class="text-side">
+                <div class="badge">🇹🇭 For Thai Expats 🇺🇸</div>
+                <h1>Stay Connected to <span>Home</span></h1>
+                <p class="description">
+                    Currency converter, Buddhist calendar, weather comparison, 
+                    Thai food finder, and translation tools — all in one extension.
+                </p>
+                <div class="features-list">
+                    <div class="feature-tag">💰 Real-time Rates</div>
+                    <div class="feature-tag">📅 วันพระ Calendar</div>
+                    <div class="feature-tag">🌡️ Dual Weather</div>
+                    <div class="feature-tag">🍜 Find Thai Food</div>
+                    <div class="feature-tag">📚 Learn Thai</div>
+                    <div class="feature-tag">💸 Compare Remittance</div>
+                </div>
+            </div>
+            <div class="app-preview">
+                <div class="screenshot-placeholder">
+                    [Extension Screenshot Here]<br><br>
+                    Replace with actual screenshot<br>
+                    of the extension popup
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

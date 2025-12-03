@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SiamConnect Screenshot 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+Thai:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 1280px;
+            height: 800px;
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #2d1b4e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Sans', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .glow1 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+            top: -200px;
+            right: -100px;
+        }
+        .glow2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+            bottom: -100px;
+            left: -50px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            z-index: 1;
+        }
+        .text-side {
+            max-width: 480px;
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(251, 191, 36, 0.15);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: #fbbf24;
+            padding: 8px 16px;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        h1 .gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .description {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 10px 16px;
+            border-radius: 24px;
+            font-size: 14px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .phone-frame {
+            width: 380px;
+            height: 600px;
+            background: #0a0a14;
+            border-radius: 32px;
+            padding: 12px;
+            box-shadow: 
+                0 50px 100px -20px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #2d1b4e 100%);
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Extension UI Recreation */
+        .ext-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+        .ext-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .ext-logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Noto Sans Thai', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+        .ext-logo-text {
+            font-size: 16px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .ext-settings {
+            width: 28px;
+            height: 28px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .ext-weather {
+            margin: 0 16px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .weather-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .weather-city {
+            font-size: 11px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 4px;
+        }
+        .weather-temp {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+        }
+        .weather-time {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+            margin-top: 4px;
+        }
+        .weather-date {
+            font-size: 10px;
+            color: rgba(255,255,255,0.4);
+        }
+        .call-status {
+            text-align: center;
+            padding: 12px;
+            color: #f87171;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .aqi-section {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .aqi-title {
+            font-size: 10px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 8px;
+        }
+        .aqi-cards {
+            display: flex;
+            gap: 8px;
+        }
+        .aqi-card {
+            flex: 1;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .aqi-city {
+            font-size: 10px;
+            color: rgba(255,255,255,0.5);
+        }
+        .aqi-value {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .aqi-good { color: #4ade80; }
+        .aqi-bad { color: #fb923c; }
+        .ext-currency {
+            margin: 12px 16px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .currency-rate {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .rate-label {
+            font-size: 18px;
+            color: rgba(255,255,255,0.6);
+        }
+        .rate-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+        .rate-change {
+            font-size: 12px;
+            color: #4ade80;
+        }
+        .currency-input {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .currency-label {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+        .currency-amount {
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+        }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin: 12px 16px;
+        }
+        .tool-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 10px 6px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .tool-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            margin: 0 auto 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .tool-name {
+            font-size: 9px;
+            color: rgba(255,255,255,0.8);
+            font-weight: 500;
+        }
+        .bg-purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+        .bg-teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+        .bg-gold { background: linear-gradient(135deg, #fbbf24, #d97706); }
+        .bg-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .bg-pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+        .bg-orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+        .bg-cyan { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+        .bg-green { background: linear-gradient(135deg, #22c55e, #16a34a); }
+    </style>
+</head>
+<body>
+    <div class="glow1"></div>
+    <div class="glow2"></div>
+    <div class="content">
+        <div class="text-side">
+            <div class="badge">🇹🇭 For Thai Expats in USA 🇺🇸</div>
+            <h1>Stay Connected<br>to <span class="gold">Home</span></h1>
+            <p class="description">
+                Currency converter, Buddhist calendar, weather comparison, 
+                Thai food finder, and translation tools — everything you need 
+                as a Thai expat, all in one Chrome extension.
+            </p>
+            <div class="features">
+                <div class="feature">💰 Real-time USD/THB</div>
+                <div class="feature">📅 วันพระ Calendar</div>
+                <div class="feature">🌡️ Dual Weather</div>
+                <div class="feature">🍜 Thai Food Finder</div>
+                <div class="feature">💸 Remittance Rates</div>
+                <div class="feature">📚 Learn Thai</div>
+            </div>
+        </div>
+        <div class="phone-frame">
+            <div class="phone-screen">
+                <div class="ext-header">
+                    <div class="ext-logo">
+                        <div class="ext-logo-icon">ส</div>
+                        <span class="ext-logo-text">SiamConnect</span>
+                    </div>
+                    <div class="ext-settings"></div>
+                </div>
+                <div class="ext-weather">
+                    <div class="weather-row">
+                        <div>
+                            <div class="weather-city">📍 Seattle</div>
+                            <div class="weather-temp">52°F ☁️</div>
+                            <div class="weather-time">1:09 PM</div>
+                            <div class="weather-date">Sun, Nov 30 • PST</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="weather-city">กรุงเทพฯ 📍</div>
+                            <div class="weather-temp">🌙 32°C</div>
+                            <div class="weather-time">4:09 AM</div>
+                            <div class="weather-date">Mon, Dec 1 • ICT</div>
+                        </div>
+                    </div>
+                    <div class="call-status">😴 People are sleeping</div>
+                    <div class="aqi-section" style="padding: 0; margin-top: 8px;">
+                        <div class="aqi-title">🌬️ Air Quality (PM2.5)</div>
+                        <div class="aqi-cards">
+                            <div class="aqi-card">
+                                <div class="aqi-city">Seattle</div>
+                                <div class="aqi-value aqi-good">AQI 42 • Good</div>
+                            </div>
+                            <div class="aqi-card">
+                                <div class="aqi-city">กรุงเทพฯ</div>
+                                <div class="aqi-value aqi-bad">AQI 142 • Unhealthy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ext-currency">
+                    <div class="currency-rate">
+                        <span class="rate-label">$1 =</span>
+                        <span class="rate-value">฿34.52</span>
+                        <span class="rate-change">↗ +0.15%</span>
+                    </div>
+                    <div class="currency-input">
+                        <span class="currency-label">🇺🇸 USD</span>
+                        <span class="currency-amount">1,000</span>
+                    </div>
+                    <div class="currency-input">
+                        <span class="currency-label">🇹🇭 THB</span>
+                        <span class="currency-amount">34,520.00</span>
+                    </div>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-item"><div class="tool-icon bg-purple">⌨️</div><div class="tool-name">Fix Text</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-teal">📏</div><div class="tool-name">Size</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-gold">📅</div><div class="tool-name">วันพระ</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-red">🏛️</div><div class="tool-name">Embassy</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-pink">🎉</div><div class="tool-name">Festivals</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-orange">🍜</div><div class="tool-name">Food</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-cyan">📚</div><div class="tool-name">Learn</div></div>
+                    <div class="tool-item"><div class="tool-icon bg-green">💸</div><div class="tool-name">Send $</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,126 @@
+================================================================================
+SIAMCONNECT - CHROME WEB STORE LISTING
+================================================================================
+
+SHORT DESCRIPTION (132 characters max):
+---------------------------------------
+Essential tools for Thai expats: currency converter, Buddhist calendar, weather comparison, Thai food finder & translation tools.
+
+
+DETAILED DESCRIPTION:
+---------------------
+🇹🇭 SiamConnect - Your Bridge Between Two Worlds 🇺🇸
+
+Living abroad as a Thai expat? SiamConnect is the ultimate Chrome extension designed specifically for Thai people living in the USA. Stay connected to home while navigating life in America.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ CORE FEATURES
+
+💰 SMART MONEY MONITOR
+• Real-time USD to THB exchange rates
+• Quick conversion with preset amounts ($100, $500, $1,000, $5,000)
+• Set rate alerts - get notified when rates hit your target
+• Compare remittance services (Wise, Remitly, Western Union, Xoom)
+• See exactly how much your family will receive
+
+🌡️ DUAL-LIFE WEATHER & AIR QUALITY
+• Side-by-side weather: Your US city vs. your Thai hometown
+• Real-time PM2.5 air quality comparison
+• "Is it a good time to call home?" indicator based on Thailand time
+• Choose from 12+ Thai cities as your hometown
+
+📅 วันพระ BUDDHIST CALENDAR
+• Accurate Wan Phra dates based on lunar calculations
+• All Thai holidays: Buddhist, Royal, Public, and Cultural
+• US holiday overlay - never miss important dates in either country
+• Upcoming Wan Phra countdown
+
+🎉 FESTIVAL COUNTDOWN
+• Days until Songkran (Thai New Year) 💦
+• Loy Krathong countdown 🪷
+• Chinese New Year tracker 🧧
+• Never miss celebrating with family back home
+
+⌨️ KEYBOARD FIX ("Did I Forget to Switch?")
+• Instantly convert English gibberish to Thai text
+• Type "สวัสดี" but got "สวัสดี"? We fix it!
+• Works both ways: Thai ↔ English keyboard conversion
+
+📏 SIZE & MEASUREMENT CONVERTER
+• US to Asian clothing sizes (S/M/L and numeric)
+• Kitchen conversions: °F to °C, lbs to kg
+• Bra size converter (US to Asian)
+• Perfect for online shopping and cooking
+
+🍜 THAI FOOD FINDER
+• Find Thai restaurants near you
+• Locate Thai grocery stores and Asian markets
+• Quick links to delivery apps (DoorDash, Uber Eats)
+• Search by specific dishes: Pad Thai, Tom Yum, Som Tam & more
+
+📚 LEARN THAI - WORD OF THE DAY
+• Daily Thai vocabulary with pronunciation
+• Audio playback to hear correct pronunciation
+• Categories: greetings, food, family, emotions & more
+• Keep your Thai skills sharp while abroad
+
+🏛️ EMBASSY & CONSULAR FEED
+• Latest news from Royal Thai Embassy
+• Passport renewal information
+• Consular service updates
+• Important announcements for Thai citizens
+
+🌐 TRANSLATION TOOLS
+• One-click full page translation
+• Hover dictionary for individual words
+• Quick links to Google Translate and Thai dictionaries
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ CUSTOMIZATION
+• Adjustable zoom level (70% - 120%)
+• Drag & drop to reorder cards
+• Choose your Thai hometown
+• Set custom currency rate alerts
+• Settings persist across sessions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔒 PRIVACY FOCUSED
+• No account required
+• No personal data collection
+• All settings stored locally on your device
+• No tracking or analytics
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Made with ❤️ for the Thai expat community.
+คิดถึงบ้าน? เราช่วยคุณได้ 🇹🇭
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KEYWORDS: Thai, Thailand, expat, currency converter, baht, USD, THB, Buddhist calendar, Wan Phra, Songkran, Loy Krathong, Thai food, translation, weather, air quality, Bangkok, immigration
+
+
+CATEGORY:
+---------
+Primary: Productivity
+Secondary: Lifestyle
+
+
+LANGUAGE:
+---------
+Primary: English
+Additional: Thai (ไทย)
+
+
+PERMISSIONS JUSTIFICATION:
+--------------------------
+• storage: Save user preferences (hometown, zoom level, card order)
+• activeTab: Enable page translation feature
+• tabs: Access current page URL for translation
+• scripting: Inject translation functionality into web pages
+• alarms: Schedule exchange rate checks (future feature)
+• notifications: Alert users when exchange rate hits target (future feature)
+
